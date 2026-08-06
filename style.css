@@ -151,8 +151,13 @@ a { color: inherit; text-decoration: none; }
 .hero {
   max-width: 860px;
   margin: 0 auto;
-  padding: 108px 24px 96px;
+  padding: 48px 24px;
   text-align: center;
+  min-height: calc(100vh - var(--nav-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero__tagline {
@@ -161,13 +166,13 @@ a { color: inherit; text-decoration: none; }
   font-size: clamp(34px, 6vw, 58px);
   line-height: 1.12;
   letter-spacing: -0.01em;
-  margin: 0 0 44px;
+  margin: 0 0 56px;
   opacity: 0;
   animation: rise 0.7s ease forwards;
 }
 
 .hero__cta {
-  margin-top: 56px;
+  margin-top: 72px;
   opacity: 0;
   animation: rise 0.7s ease forwards;
   animation-delay: 0.25s;
@@ -392,7 +397,7 @@ a { color: inherit; text-decoration: none; }
   .nav__waitlist-btn { font-size: 12.5px; padding: 8px 14px; }
   .nav__logo { font-size: 17px; }
   .nav__socials { gap: 10px; }
-  .hero { padding: 72px 20px 64px; }
+  .hero { padding: 40px 20px; }
   .activities { padding: 24px 18px 80px; }
   .activities__preview { border-radius: 18px; }
   .waitlist { padding: 72px 20px; }
